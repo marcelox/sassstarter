@@ -1,7 +1,6 @@
 var gulp = require ('gulp'),
     gutil= require ('gulp-util'),
-	compass = require ('gulp-compass'),
-	webserver = require('gulp-webserver');
+	compass = require ('gulp-compass');
 	
 	
 	
@@ -25,13 +24,6 @@ gulp.task ('watch', function() {
     gulp.watch('sasscomponents/*.scss',['compass']); 
 });
 
-gulp.task('webserver', function() {
-    gulp.src('.')
-        .pipe(webserver({
-            livereload: true,
-            open: true
-        }));
-});
 
 
- gulp.task ('default', ['compass', 'watch', 'webserver']);
+ gulp.task ('default', ['compass', 'watch']);
