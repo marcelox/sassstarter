@@ -11,10 +11,11 @@ gulp.task ('compass', function() {
 	gulp.src(sassSources)  
 	.pipe(compass({
 		 sass: 'sasscomponents',
+		 css: 'child_theme', // default was folder called 'css'
 		 style: 'expanded'
 	}))
 	.on('error', gutil.log)
-	.pipe(gulp.dest('css')) // destination folder eg 'builds/nameapp/css'
+	.pipe(gulp.dest('child_theme/')) // destination folder eg 'builds/nameapp/css' 
 
 }); 
 

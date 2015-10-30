@@ -1,12 +1,32 @@
+@charset "utf-8";
+/*
+Theme Name: 	Your CHILDTHEME
+Author: 		Marcelo Cordeiro Correia
+Description:	Child Theme for ...
+Template:		MAINTHEME
+Version: 		0.0.1
+*/
+
+@import url('../MAINTHEME/style.css');
+@import "compass/css3";
+@import "compass/css3/selection";
+@import "compass/css3/hyphenation";
+@import "compass/css3/filter";
+
+
 @import "variables";
 @import "mixins";
 
-html {
-	color: green;
-	body {
-	color: orange;
-		p {
-		color: $redone;
-	}
-	}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+p,ul {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  color: $redone;
 }
