@@ -1,0 +1,13 @@
+{
+  "name": "my_sass_starter",
+  "version": "1.0.0",
+  "description":"A starter for a simple web project with sass/compass",
+  "license":"MIT",
+  "author":"marcelo cordeiro",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-util": "^3.0.7",
+    "gulp-webserver": "^0.9.1"
+  }
+}

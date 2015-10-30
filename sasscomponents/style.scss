@@ -1,0 +1,12 @@
+@import "variables";
+@import "mixins";
+
+html {
+	color: green;
+	body {
+	color: orange;
+		p {
+		color: $redone;
+	}
+	}
+}
