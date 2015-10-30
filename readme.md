@@ -1,6 +1,7 @@
 sassstarter
 ===========
-Development folder structure with sass 
+Development directory template, that adds sass/compass functionalities to a project (either existing or a new one). Branch `sassforwordpress` creates a Child Theme directory with sass/compass into the Themes directory. 
+Requirements: node.js, git and gulp.
 
 
 For a simple Web Project
@@ -36,12 +37,15 @@ then
 `npm install`
 
 Before running `gulp`:
-- Rename the _'child_theme'_ entries on gulpfile.js to your new wordpress childtheme name.
-- In the styles.scss in the sasscomponents folder, rename the _theme name_, _template_ (directory name of the parent theme) and the line:
+- Rename the _'child_theme'_ entries in the *gulpfile.js* file to your new wordpress childtheme name.
+- In the styles.scss in the sasscomponents folder, rename the 
+    1. _theme name_, 
+    2. _template_ (directory name of the parent theme) and 
+    3. the line:
 
-`@import url('../the_parent_theme_folder/style.css')`
+      `@import url('../the_parent_theme_folder/style.css')`
 
-or add a wp_enqueue_scripts script in the child theme's functions.php (because @[import is no longer best practice](https://codex.wordpress.org/Child_Themes))
+      or add a wp_enqueue_scripts script in the child theme's functions.php (because @[import is no longer best   practice](https://codex.wordpress.org/Child_Themes))
 
 now you can run 
 
