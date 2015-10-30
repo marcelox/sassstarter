@@ -36,8 +36,8 @@ then
 `npm install`
 
 Before running `gulp`:
-- Rename the child_theme entries on gulpfile.js to your new wordpress childtheme.
-- In the sasscomponents folder, rename the theme name, template (directory name of the parent theme) and the line
+- Rename the _'child_theme'_ entries on gulpfile.js to your new wordpress childtheme name.
+- In the styles.scss in the sasscomponents folder, rename the _theme name_, _template_ (directory name of the parent theme) and the line:
 
 `@import url('../the_parent_theme_folder/style.css')`
 
@@ -47,3 +47,4 @@ now you can run
 
 `gulp`
 
+_Assuming you want to start a fresh repo with all the files of your Wordpress project, it is a good idea to delete the .git directory you just created in your Themes folder (with a  `rm -dfr .git`)_
