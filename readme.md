@@ -63,14 +63,16 @@ then
 
 Before running `gulp`:
 - Rename the _'child_theme'_ entries in the *gulpfile.js* file with your new wordpress childtheme name.
-- In the styles.scss (in the sasscomponents folder), rename the
+- In the style.scss (in the sasscomponents folder), rename the
     1. _theme name_,
     2. _template_ (directory name of the parent theme) and
-    3. the line:
+    3. replace the parent_theme_folder in the line:
 
       `@import url('../the_parent_theme_folder/style.css')`
 
       or add a `wp_enqueue_scripts` script in the child theme's functions.php (because @[import is no longer best   practice](https://codex.wordpress.org/Child_Themes))
+    
+    4. If you already have a css file in your old child theme directory, copy and paste your code into the new style.scss - otherwise it will be overwritten in the next step
 
 now you can run
 
