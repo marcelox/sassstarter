@@ -15,7 +15,7 @@ If your working folder is not empty and you wish to add the files of this repo, 
 ```git
 git init .
 
-git remote add -t \* -f origin https://github.com/marcelox/sassstarter.git`
+git remote add -t \* -f origin https://github.com/marcelox/sassstarter.git
 
 git checkout master
 ```
@@ -34,7 +34,7 @@ If your working folder was already initialized with git, then you have to give a
 
 ```git
 
-git remote add -t \* -f sass https://github.com/marcelox/sassstarter.git`
+git remote add -t \* -f sass https://github.com/marcelox/sassstarter.git
 
 ```
 Merge the files to your your branch, then run
@@ -53,9 +53,9 @@ In the Themes folder of your Wordpress Project run
 ```git
 git init .
 
-`git remote add -t \* -f origin https://github.com/marcelox/sassstarter.git`
+git remote add -t \* -f origin https://github.com/marcelox/sassstarter.git
 
-`git checkout sassforwordpress`
+git checkout sassforwordpress
 ```
 then
 
